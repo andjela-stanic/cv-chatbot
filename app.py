@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-import langchain.text_splitter
+import langchain.*
 from openai import OpenAI
 from langchain.text_splitter import RecursiveCharacterTextSplitter as CharacterTextSplitter
 from langchain.vectorstores import FAISS
