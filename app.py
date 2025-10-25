@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import langchain
 from openai import OpenAI
-from langchain.text_splitter import RecursiveCharacterTextSplitter as CharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter as CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
 
