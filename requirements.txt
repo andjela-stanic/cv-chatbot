@@ -1,6 +1,7 @@
 streamlit
 langchain
 openai
+tiktoken
 faiss-cpu
 transformers
 sentence-transformers
