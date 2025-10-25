@@ -2,6 +2,7 @@ streamlit
 langchain
 openai
 tiktoken
+langchain-text-splitters
 faiss-cpu
 transformers
 sentence-transformers
