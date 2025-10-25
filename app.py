@@ -3,7 +3,7 @@ import os
 import langchain
 from openai import OpenAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter as CharacterTextSplitter
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
 
 # --------------------------------------------------
