@@ -1,0 +1,213 @@
+import streamlit as st
+from langchain.text_splitter import RecursiveCharacterTextSplitter as CharacterTextSplitter
+from langchain.vectorstores import FAISS
+from langchain.chains import RetrievalQA
+from langchain.llms import HuggingFacePipeline
+from langchain.embeddings import HuggingFaceEmbeddings
+from transformers import pipeline
+import os
+
+# --------------------------------------------------
+# Optional: fix cache so models don’t redownload
+# --------------------------------------------------
+os.environ["HF_HOME"] = os.path.expanduser("~/.cache/huggingface")
+
+# --------------------------------------------------
+# 1. Load your CV
+# --------------------------------------------------
+with open("cv.md", "r", encoding="utf-8") as f:
+    cv_text = f.read()
+
+# --------------------------------------------------
+# 2. Split text into smaller chunks
+# --------------------------------------------------
+splitter = CharacterTextSplitter(chunk_size=300, chunk_overlap=30)
+chunks = splitter.split_text(cv_text)
+
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+vectorstore = FAISS.from_texts(chunks, embeddings)
+
+# --------------------------------------------------
+# 3. Load fast and lightweight HuggingFace model
+# --------------------------------------------------
+generator = pipeline(
+    "text2text-generation",
+    model="google/flan-t5-base",
+    tokenizer="google/flan-t5-base",
+    max_new_tokens=150,
+    temperature=0.5,
+    device=-1  # CPU
+)
+
+llm = HuggingFacePipeline(pipeline=generator)
+qa = RetrievalQA.from_chain_type(llm=llm, retriever=vectorstore.as_retriever())
+
+# --------------------------------------------------
+# 4. Streamlit UI
+# --------------------------------------------------
+st.set_page_config(page_title="Andjela's Career Chatbot", page_icon="🤖", layout="wide")
+
+# Custom styling
+st.markdown("""
+    <style>
+        .main { background-color: #111827; color: #E5E7EB; }
+        .stTextInput>div>div>input { background-color: #1F2937; color: #F9FAFB; }
+        .stTextInput>label { font-weight: bold; color: #E5E7EB; }
+    </style>
+""", unsafe_allow_html=True)
+
+st.title("🤖 Andjela's Career Chatbot")
+st.write("Ask me anything about my career, experience, or projects!")
+
+# Sidebar
+st.sidebar.header("📌 Quick Links")
+st.sidebar.markdown("[🌐 LinkedIn Profile](https://www.linkedin.com/in/andjela-stanic/)")
+st.sidebar.info("This chatbot uses my CV and LinkedIn data to generate answerimport streamlit as st
+from langchain.text_splitter import RecursiveCharacterTextSplitter as CharacterTextSplitter
+from langchain.vectorstores import FAISS
+from langchain.chains import RetrievalQA
+from langchain.llms import HuggingFacePipeline
+from langchain.embeddings import HuggingFaceEmbeddings
+from transformers import pipeline
+import os
+
+# --------------------------------------------------
+# Optional: fix cache so models don’t redownload
+# --------------------------------------------------
+os.environ["HF_HOME"] = os.path.expanduser("~/.cache/huggingface")
+
+# --------------------------------------------------
+# 1. Load your CV
+# --------------------------------------------------
+with open("cv.md", "r", encoding="utf-8") as f:
+    cv_text = f.read()
+
+# --------------------------------------------------
+# 2. Split text into smaller chunks
+# --------------------------------------------------
+splitter = CharacterTextSplitter(chunk_size=300, chunk_overlap=30)
+chunks = splitter.split_text(cv_text)
+
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+vectorstore = FAISS.from_texts(chunks, embeddings)
+
+# --------------------------------------------------
+# 3. Load fast and lightweight HuggingFace model
+# --------------------------------------------------
+generator = pipeline(
+    "text2text-generation",
+    model="google/flan-t5-base",
+    tokenizer="google/flan-t5-base",
+    max_new_tokens=150,
+    temperature=0.5,
+    device=-1  # CPU
+)
+
+llm = HuggingFacePipeline(pipeline=generator)
+qa = RetrievalQA.from_chain_type(llm=llm, retriever=vectorstore.as_retriever())
+
+# --------------------------------------------------
+# 4. Streamlit UI
+# --------------------------------------------------
+st.set_page_config(page_title="Andjela's Career Chatbot", page_icon="🤖", layout="wide")
+
+# Custom styling
+st.markdown("""
+    <style>
+        .main { background-color: #111827; color: #E5E7EB; }
+        .stTextInput>div>div>input { background-color: #1F2937; color: #F9FAFB; }
+        .stTextInput>label { font-weight: bold; color: #E5E7EB; }
+    </style>
+""", unsafe_allow_html=True)
+
+st.title("🤖 Andjela's Career Chatbot")
+st.write("Ask me anything about my career, experience, or projects!")
+
+# Sidebar
+st.sidebar.header("📌 Quick Links")
+st.sidebar.markdown("[🌐 LinkedIn Profile](https://www.linkedin.com/in/andjela-stanic/)")
+st.sidebar.info("This chatbot uses my CV and LinkedIn data to generate answers.")
+
+# --------------------------------------------------
+# 5. Input & Response
+# --------------------------------------------------
+query = st.text_input("Enter your question:")
+
+if query:
+    # Add friendly prompt
+    prompt = f"""
+    You are a professional AI assistant representing Andjela Stanić.
+    Respond naturally and conversationally in 2–4 sentences maximum.
+    If the user asks about Andjela, answer in the first person ("I am...").
+    If the question is technical, summarize briefly based on her CV.
+    Question: {query}
+    """
+    with st.spinner("Thinking..."):
+        answer = qa.run(prompt)
+    st.subheader("Answer:")
+    st.write(answer)
+query = st.text_input("Enter your question:")
+
+if query:
+    # Add friendly prompt
+    prompt = f"""
+    You are a professional AI assistant representing Andjela Stanić.
+    Respond naturally and conversationally in 2–4 sentences maximum.
+    If the user asks about Andjela, answer in the first person ("I am...").
+    If the question is technical, summarize briefly based on her CV.
+    Question: {query}
+    """
+    with st.spinner("Thinking..."):
+        answer = qa.run(prompt)
+    st.subheader("Answer:")
+    st.write(answer)
+mport streamlit as st
+from langchain.text_splitter import CharacterTextSplitter
+from langchain.vectorstores import FAISS
+from langchain.chains import RetrievalQA
+from langchain.llms import HuggingFacePipeline
+from langchain.embeddings import HuggingFaceEmbeddings
+from transformers import pipeline
+
+# Load CV
+with open("cv.md", "r", encoding="utf-8") as f:
+    cv_text = f.read()
+
+# Split text
+splitter = CharacterTextSplitter(chunk_size=300, chunk_overlap=30)
+chunks = splitter.split_text(cv_text)
+
+# Embeddings
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+vectorstore = FAISS.from_texts(chunks, embeddings)
+
+# Hugging Face model (free)
+
+generator = pipeline(
+    "text2text-generation",
+    model="google/flan-t5-base",
+    tokenizer="google/flan-t5-base",
+)
+
+llm = HuggingFacePipeline(pipeline=generator)
+
+qa = RetrievalQA.from_chain_type(
+    llm=llm,
+    retriever=vectorstore.as_retriever()
+)
+
+# Streamlit interface
+st.set_page_config(page_title="Andjela's CV Chatbot", page_icon="🤖")
+st.title("🤖 Andjela's Career Chatbot")
+st.write("Ask me anything about my career, experience, or projects!")
+
+st.sidebar.header("📌 Quick Links")
+st.sidebar.markdown("[🌐 LinkedIn Profile](https://www.linkedin.com/in/andjela-stanic/)")
+st.sidebar.info("This chatbot uses my CV and LinkedIn data to generate answers.")
+
+query = st.text_input("Enter your question:")
+if query:
+    answer = qa.run(query)
+    st.write("**Answer:**")
+    st.write(answer)
+
