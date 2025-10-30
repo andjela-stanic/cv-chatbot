@@ -86,7 +86,7 @@ I actively collaborate across departments to align analytics with marketing, fin
   🔗 [View Certificate](https://udemy-certificate.s3.amazonaws.com/pdf/UC-b94b94a8-4123-488f-bde7-cdacc66499af.pdf)
 
 ---
-## 🏗️ Flagship Project – MaxBet Data Science architecture on AWS   
+## 🏗️ Biggest Project – MaxBet Data Science architecture on AWS   
 
 **Project scope and achievements:**  
 - Built a scalable **AWS Data Science architecture** combining Redshift, SageMaker, Lambda, Airflow, and S3 for automated model deployment and monitoring.  
