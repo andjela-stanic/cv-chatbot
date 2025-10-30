@@ -64,8 +64,7 @@ st.sidebar.info("This chatbot uses Andjela's CV and OpenAI GPT-4o-mini for intel
 query = st.text_input("Enter your question:")
 
 if not query:
-    st.info("👋 Hi! I'm Andjela’s virtual CV assistant. When CV isn't enough, you can ask me! 
-    Ask me about her work, skills, or projects.")
+    st.info("👋 Hi! I'm Andjela’s virtual CV assistant. When CV isn't enough, you can ask me! Ask me about her work, skills, or projects.")
 else:
     with st.spinner("Thinking..."):
         context = retrieve_context(query)
