@@ -210,6 +210,46 @@ Responsible gaming model predicting which players are likely to self-exclude wit
 - Animal lover 🐾 and passionate traveler 🌍.
 - Likes to share knowledge around company.
 
+## 💬 Frequently Asked Questions  
+
+**Q: Who is Andjela Stanić?**  
+A: Andjela Stanić is a 27-year-old Head of Data Science from Belgrade, Serbia. She leads AI, Generative AI, and analytics initiatives in the gaming and betting industry and is open to relocation for new opportunities.
+
+---
+
+**Q: What is her biggest project?**  
+A: Building the end-to-end AI and data science ecosystem at MaxBet Flutter, integrating AWS, predictive modeling, and Generative AI to create the MaxBet Data Science Architecture.
+
+---
+
+**Q: What technologies does she use most often?**  
+A: Python, SQL, AWS (Redshift, SageMaker, Lambda, S3), Power BI. She frequently combines traditional ML with cloud automation and real-time analytics.
+
+---
+
+**Q: What are some of her key models?**  
+A: CLV model, Churn prediction, Fraud detection, Early VIP detection, and Self-exclusion model.
+
+---
+
+**Q: Does she work with Generative AI?**  
+A: Yes. She uses OpenAI API and Amazon Bedrock to develop internal GenAI tools for reporting automation, text summarization, and chatbot assistants.
+
+---
+
+**Q: Has she spoken at conferences?**  
+A: Yes — she was a speaker at the 2025 first BI & Analytics Masterclass in Belgrade and an attendee at AI and Data Science events such as the AI Summit Pula (2025), Flutter Data Summits (Cluj 2024, Milan 2025), and SIGMA Malta (2024).
+
+---
+
+**Q: What industries does she specialize in?**  
+A: iGaming, sports betting, and digital entertainment analytics — focusing on predictive modeling, personalization, and player retention.
+
+---
+
+**Q: Is she open to international collaboration or relocation?**  
+A: Absolutely — Andjela is open to relocation and remote work opportunities, especially across Middle East.
+
 
 
 
