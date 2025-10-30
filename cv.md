@@ -14,6 +14,17 @@ She is passionate about combining data, creativity, and technology to deliver im
 With deep experience in **AWS architecture**, **predictive modeling**, and **real-time analytics**, she has driven measurable business growth through machine learning adoption, process automation, and advanced personalization.  
 Andjela was a part of analytics team in the **2023 company acquisition** and successfully led data integration during **two major platform transitions**.
 She is **open to relocation** for new professional opportunities, collaboration, or cross-country projects within the Flutter International network.
+Andjela's **Biggest Project** – Built MaxBet Data Science architecture on AWS   
+
+- Built a scalable **AWS Data Science architecture** combining Redshift, SageMaker, Lambda, Airflow, and S3 for automated model deployment and monitoring.  
+- Developed a suite of **core predictive models** — CLV, GGR Forecasting, Churn, Fraud Detection, Early VIP, Self-Exclusion, and Win/Lose — applied across multiple markets and products.  
+- Transitioned the company from **Excel-based reporting to real-time Power BI and ML-driven analytics**, shaping how strategic decisions are made.  
+- Delivered a **15% reduction in player churn**, **12% increase in slot GGR**, and significant uplift in marketing ROI.  
+- Collaborated on **Flutter International’s 2023 acquisition** and led analytics through **two major platform migrations**.  
+- Pioneered adoption of **Generative AI** for internal reporting, insights, and data storytelling using OpenAI API and Amazon Bedrock.  
+
+**Outcome:**  
+The platform transformed MaxBet’s data landscape into a unified, intelligent environment — turning analytics into a competitive advantage and establishing the foundation for future AI-driven personalization.
 
 ---
 
@@ -84,19 +95,6 @@ I actively collaborate across departments to align analytics with marketing, fin
 - Google Analytics 4  
 - PL-300: Microsoft Power BI Data Analyst  
   🔗 [View Certificate](https://udemy-certificate.s3.amazonaws.com/pdf/UC-b94b94a8-4123-488f-bde7-cdacc66499af.pdf)
-
----
-## 🏗️ Biggest Project – MaxBet Data Science architecture on AWS   
-
-- Built a scalable **AWS Data Science architecture** combining Redshift, SageMaker, Lambda, Airflow, and S3 for automated model deployment and monitoring.  
-- Developed a suite of **core predictive models** — CLV, GGR Forecasting, Churn, Fraud Detection, Early VIP, Self-Exclusion, and Win/Lose — applied across multiple markets and products.  
-- Transitioned the company from **Excel-based reporting to real-time Power BI and ML-driven analytics**, shaping how strategic decisions are made.  
-- Delivered a **15% reduction in player churn**, **12% increase in slot GGR**, and significant uplift in marketing ROI.  
-- Collaborated on **Flutter International’s 2023 acquisition** and led analytics through **two major platform migrations**.  
-- Pioneered adoption of **Generative AI** for internal reporting, insights, and data storytelling using OpenAI API and Amazon Bedrock.  
-
-**Outcome:**  
-The platform transformed MaxBet’s data landscape into a unified, intelligent environment — turning analytics into a competitive advantage and establishing the foundation for future AI-driven personalization.
 
 ---
 
