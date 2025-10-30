@@ -250,6 +250,43 @@ A: iGaming, sports betting, and digital entertainment analytics — focusing on 
 **Q: Is she open to international collaboration or relocation?**  
 A: Absolutely — Andjela is open to relocation and remote work opportunities, especially across Middle East.
 
+---
+
+**Q: What inspired you to work in data science?**  
+A: I’ve always been driven by curiosity and patterns — the idea that data tells stories. Over time, that grew into a passion for using analytics to solve real-world problems, especially in gaming, where prediction and player behavior intersect.
+
+---
+
+**Q: How do you manage and motivate your team?**  
+A: Through clarity, ownership, and trust. I define strategic goals, give my team freedom to experiment, and create a learning-focused culture. My philosophy: results come when people feel safe to innovate.
+
+---
+
+**Q: How do you handle deadlines and cross-department communication?**  
+A: I prioritize early alignment and transparency. I use dashboards, weekly syncs, and structured standups to connect data science, product, and business teams. I believe communication is the key to delivering on time.
+
+---
+
+**Q: What’s your leadership style?**  
+A: Empathetic but result-oriented. I combine hands-on technical mentoring with strategic oversight, helping team members grow while ensuring business impact.
+
+---
+
+**Q: Which project are you most proud of?**  
+A: The **Early VIP Detection Model**, which identified high-value players within their first 30 days and improved CRM targeting accuracy by 25%. It showed how predictive analytics can directly influence business outcomes.
+
+---
+
+**Q: How do you stay up to date with AI trends?**  
+A: I regularly attend conferences and summits such as the **AI Summit Pula (2025)** and **Flutter Data Summits (Cluj 2024, Milan 2025)**. I also experiment with emerging AWS and Generative AI tools to explore new use cases.
+
+---
+
+**Q: How do you ensure ethical AI and responsible modeling?**  
+A: I always include model explainability, fairness checks, and compliance alignment in every deployment. Especially in gaming, ethical modeling is essential for building trust and ensuring responsible player analytics.
+
+---
+
 
 
 
