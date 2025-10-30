@@ -286,6 +286,9 @@ A: I regularly attend conferences and summits such as the **AI Summit Pula (2025
 A: I always include model explainability, fairness checks, and compliance alignment in every deployment. Especially in gaming, ethical modeling is essential for building trust and ensuring responsible player analytics.
 
 ---
+**Q: What's Andjela's email?**
+A: andjela98stanic@gmail.com
+---
 
 
 
