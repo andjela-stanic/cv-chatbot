@@ -54,7 +54,7 @@ def ask_openai(prompt):
 # --------------------------------------------------
 st.set_page_config(page_title="Andjela's Career Chatbot", page_icon="🤖", layout="wide")
 
-st.title("🤖 Andjela's Career Chatbot (GPT-4o-mini)")
+st.title("🤖 Andjela's Career Chatbot")
 st.write("Ask me anything about my career, experience, or achievements!")
 
 st.sidebar.header("📌 Quick Links")
@@ -64,7 +64,8 @@ st.sidebar.info("This chatbot uses Andjela's CV and OpenAI GPT-4o-mini for intel
 query = st.text_input("Enter your question:")
 
 if not query:
-    st.info("👋 Hi! I'm Andjela’s virtual CV assistant. Ask me about her work, skills, or projects.")
+    st.info("👋 Hi! I'm Andjela’s virtual CV assistant. When CV isn't enough, you can ask me! 
+    Ask me about her work, skills, or projects.")
 else:
     with st.spinner("Thinking..."):
         context = retrieve_context(query)
