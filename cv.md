@@ -12,7 +12,7 @@
 Andjela Stanić is a **27-year-old Head of Data Science** based in **Belgrade, Serbia**, leading AI, Generative AI, and analytics initiatives in the gaming and betting industry.  
 She is passionate about combining data, creativity, and technology to deliver impactful, ethical, and scalable data solutions.  
 With deep experience in **AWS architecture**, **predictive modeling**, and **real-time analytics**, she has driven measurable business growth through machine learning adoption, process automation, and advanced personalization.  
-Andjela played a key role in the **2023 company acquisition** and successfully led data integration during **two major platform transitions**.
+Andjela was a part of analytics team in the **2023 company acquisition** and successfully led data integration during **two major platform transitions**.
 She is **open to relocation** for new professional opportunities, collaboration, or cross-country projects within the Flutter International network.
 
 ---
@@ -88,7 +88,6 @@ I actively collaborate across departments to align analytics with marketing, fin
 ---
 ## 🏗️ Biggest Project – MaxBet Data Science architecture on AWS   
 
-**Project scope and achievements:**  
 - Built a scalable **AWS Data Science architecture** combining Redshift, SageMaker, Lambda, Airflow, and S3 for automated model deployment and monitoring.  
 - Developed a suite of **core predictive models** — CLV, GGR Forecasting, Churn, Fraud Detection, Early VIP, Self-Exclusion, and Win/Lose — applied across multiple markets and products.  
 - Transitioned the company from **Excel-based reporting to real-time Power BI and ML-driven analytics**, shaping how strategic decisions are made.  
@@ -101,7 +100,7 @@ The platform transformed MaxBet’s data landscape into a unified, intelligent e
 
 ---
 
-## Key Projects & Achievements  
+## Projects & Achievements  
 
 - **Real-Time Recommendation System:** Developed casino game recommendation engine using LightFM and AWS SageMaker, increasing engagement by 17%.  
 - **Player Segmentation & CLV Modeling:** Built clustering models for user lifetime value prediction and churn detection using PyCaret and Redshift ML integration.  
@@ -198,7 +197,7 @@ Responsible gaming model predicting which players are likely to self-exclude wit
 
 ## 🎤 Community & Talks  
 
-- **Speaker:** *BI & Analytics Masterclass* (Belgrade, 2024) – Presented “How MaxBet built Power BI as the foundation of business”.  
+- **Speaker:** *BI & Analytics Masterclass* (Belgrade, 2024) – Presented “How MaxBet set Power BI as the foundation of business”.  
 - **Attendee:** *Data Science Conferences* (2022, 2023, 2024) – Focused on machine learning, predictive analytics, and real-time data infrastructure.  
 - **Attendee:** *AI Summit Pula* (2025) – Participated in sessions on Generative AI applications and AWS Bedrock integration.  
 - **Attendee:** *Flutter Data Summit Cluj* (2024) – Shared insights on data governance and cross-cluster analytics.  
